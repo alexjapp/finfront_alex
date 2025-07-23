@@ -100,10 +100,6 @@ def logout():
 if __name__ == '__main__':
     app.run(debug=True)
 
-@app.route('/api/slow-endpoint')
-def slow_endpoint():
-    time.sleep(5)
-    return "This was a slow response after 5 seconds"
 
 
 
